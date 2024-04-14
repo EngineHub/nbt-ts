@@ -1,6 +1,6 @@
 {
   "name": "@enginehub/nbt-ts",
-  "version": "1.3.5",
+  "version": "2.0.0",
   "description": "An easy to use encoder and decoder for the NBT format",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
@@ -38,8 +38,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^16.4.8",
-    "typescript": "^4.7.4"
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "packageManager": "yarn@4.1.1"
 }
