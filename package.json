@@ -1,13 +1,25 @@
 {
-  "name": "nbt-ts",
+  "name": "@enginehub/nbt-ts",
   "version": "1.3.5",
   "description": "An easy to use encoder and decoder for the NBT format",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/index.d.ts",
+        "default": "./lib/esm/index.js"
+      },
+      "require": {
+        "types": "./lib/cjs/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janispritzkau/nbt-ts.git"
+    "url": "git+https://github.com/EngineHub/nbt-ts.git"
   },
   "scripts": {
     "test": "node test",
@@ -21,6 +33,9 @@
     "snbt"
   ],
   "author": "Janis Pritzkau <janispritzkau@gmail.com>",
+  "contributors": [
+    "EngineHub"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.4.8",
